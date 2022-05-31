@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form | Freecodecamp Project</title>
+  </head>
+  <body>
+    <h1 id="title">The Top 6 Premier League Supporters Survey</h1>
+    <p id="description">
+      We want to find out which "Top 6" premier league club you support and
+      expectations.
+    </p>
+    <form id="survey-form" action="#">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Name:
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+        /></label>
+        <label id="email-label" for="email"
+          >Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label id="number-label" for="age"
+          >Age (optional):
+          <input id="number" type="number" min="12" max="200" placeholder="Age"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >Which "Top 6" Premier League club do you support?</label
+        >
+        <select name="premclubs" id="dropdown" required>
+          <option value="">--Please choose an option--</option>
+          <option value="arsenal">Arsenal</option>
+          <option value="chelsea">Chelsea</option>
+          <option value="liverpool">Liverpool</option>
+          <option value="mancity">Manchester City</option>
+          <option value="manutd">Manchester United</option>
+          <option value="tottenham">Tottenham Hotspur</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="seasons=watched"
+          >How long have you been watching your team play?</label
+        >
+        <label for="seasons-watched"
+          ><input
+            class="inline"
+            type="radio"
+            id="lt-five-years"
+            name="seasons-watched"
+            value="lt-five-years"
+            checked
+          />
+          less than 5 years</label
+        >
+        <label for="seasons-watched"
+          ><input
+            class="inline"
+            type="radio"
+            id="mt-five-years"
+            name="seasons-watched"
+            value="mt-five-years"
+          />
+          more than 5 years</label
+        >
+        <label for="seasons-watched"
+          ><input
+            class="inline"
+            type="radio"
+            id="over-ten-years"
+            name="seasons-watched"
+            value="over-ten-years"
+          />
+          over 10 years</label
+        >
+        <label for="seasons-watched"
+          ><input
+            class="inline"
+            type="radio"
+            id="over-twenty-years"
+            name="seasons-watched"
+            value="over-twenty-years"
+          />
+          over 20 years</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="dropdown-two"
+          >What's your general feeling towards the club's achievements?</label
+        >
+        <select name="premclubs" id="dropdown-two" required>
+          <option value="">--Please choose an option--</option>
+          <option value="very disappointed">Very Disappointed</option>
+          <option value="disappointed">Disappointed</option>
+          <option value="neutral">Neutral</option>
+          <option value="satisfied">Satisfied</option>
+          <option value="very satisfied">Very Satisfied</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="expectations"
+          >What are your expectations towards your club?</label
+        >
+        <label for="pl-champion"
+          ><input
+            class="inline large"
+            type="checkbox"
+            id="pl-champion"
+            name="pl-champion"
+            value="pl-champion"
+            checked
+          />
+          Premier League Champions</label
+        >
+        <label for="title-contend"
+          ><input
+            class="inline large"
+            type="checkbox"
+            id="title-contend"
+            name="title-contend"
+            value="title-contend"
+          />
+          Competing for Premier League Championship</label
+        >
+        <label for="ucl-qual"
+          ><input
+            class="inline large"
+            type="checkbox"
+            id="ucl-qual"
+            name="ucl-qual"
+            value="ucl-qual"
+          />
+          UEFA Champions League Qualification</label
+        >
+        <label for="uel-qual"
+          ><input
+            class="inline large"
+            type="checkbox"
+            id="uel-qual"
+            name="uel-qual"
+            value="uel-qual"
+          />
+          UEFA Europa League Qualification</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="comments">
+          Any other comments/feelings or expectations towards your club?
+          <textarea
+            name="comments"
+            id="comments"
+            cols="50"
+            rows="5"
+            maxlength="250"
+            placeholder="any other comments can be put in here..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
